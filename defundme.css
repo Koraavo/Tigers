@@ -8,7 +8,7 @@
     --clr-fnt:black;
 
         /* final clamps for the main header */
-    --fnt-mainhead-lh: clamp(2.8rem, 8vw, 8rem);
+    --fnt-mainhead-lh: clamp(2.9rem, 8vw, 8rem);
     --fnt-mainhead: clamp(3.5rem, 10vw, 10rem); 
     --fnt-extinction: clamp(5rem, 14vw, 14rem); 
     --fnt-mainhead-fline-position: clamp(-10rem,-10vw,-4rem);
@@ -16,9 +16,10 @@
     --fnt-mainhead-tline-position: clamp(1rem,3vw,3rem);
 
 
-    
-    --fnt-hundred: 30rem;
-    --fnt-years: 8rem;
+    /* 100 years */
+    --fnt-100-lh: clamp(5rem, 12vw, 12rem);
+    --fnt-hundred: clamp(13rem,28vw,30rem);
+    --fnt-years: clamp(3.2rem,8vw,8rem);
     --fnt-yellowbox: 60rem;
     
 }
@@ -237,7 +238,7 @@ section {
 .years100 span {
     display: block;
     text-align: center;
-    line-height: 12rem;
+    line-height: var(--fnt-100-lh);
 }
 
 .years100 {
@@ -450,8 +451,9 @@ section {
         max-width: 95%;
         margin: auto;
     }
+
+    .box, 
     .menu,
-    .text-scrolling-horizontally,
     .more-images {
         display: none;
     }
