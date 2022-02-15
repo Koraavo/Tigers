@@ -252,7 +252,7 @@ section {
 
 .box {
     /* background: goldenrod; */
-    border: 1rem solid goldenrod;
+    border: .5rem solid goldenrod;
     width: var(--fnt-yellowbox);
     height: 10rem;
     border-radius: 7rem;
@@ -270,7 +270,7 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    animation: scroll 40s infinite linear;
+    animation: scroll 40s infinite;
 }
 
 @keyframes scroll {
@@ -297,6 +297,12 @@ section {
     white-space: nowrap;
     color: var(--clr-urgent);
 
+}
+
+.box:hover .slide,
+.box:focus .slide {
+    animation-play-state: paused;
+    cursor: pointer;
 }
 
 
