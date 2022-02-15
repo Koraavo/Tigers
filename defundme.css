@@ -19,8 +19,9 @@
 
     /* 100 years */
     --fnt-100-lh: clamp(5rem, 12vw, 12rem);
-    --fnt-hundred: clamp(13rem,28vw,30rem);
-    --fnt-years: clamp(3.2rem,8vw,8rem);
+    --fnt-hundred: clamp(10rem,28vw,30rem);
+    --fnt-years: clamp(2.5rem,8vw,8rem);
+
 
     /* box with text */
     --box-width: clamp(10vw,70vw,60rem);
@@ -46,6 +47,7 @@ html {
 body {
     font-size: 1.6rem;
     background-color: var(--clr-bg);
+    
 }
 
 section {
@@ -122,7 +124,7 @@ section {
 }
 
 .img-tiger {
-    width: 40%;
+    width: 90vw;
     border-radius: 1rem;
 }
 
@@ -343,7 +345,7 @@ section {
     width: 100%;
     margin-top: 10rem;
     font-family: var(--fnt-primary);
-    padding: 5rem 5rem;
+    padding: 2rem 5rem;
     display: grid;
     justify-content: space-evenly;
     align-items: center;
@@ -494,7 +496,6 @@ section {
     cursor: pointer;
   }
 
-
   /* mobile version */
 
 @media (max-width:1040px){
@@ -517,7 +518,6 @@ section {
         "socialMedia socialMedia"
         "Newsletter Newsletter"
         "copyRight helpNow";
-        
     }
 
     .foot1 {
@@ -539,8 +539,10 @@ section {
 }
 
 @media (max-width:780px) {
+
     .stripes {
-        padding: 0 2rem;
+        /* padding: 0; */
+        padding: 0 1rem; 
     }
 
     .text-scrolling-horizontally {
@@ -549,12 +551,14 @@ section {
         text-align: center;
     }
 
-    /* .box {
-        width: 40rem;
-        height: 7rem;
-        align-items: center;
-        justify-content: center;
-    } */
+
+
+    .menu,
+    .more-images
+    {
+        display: none;
+    }
+
     
 }
 
