@@ -21,7 +21,11 @@
     --fnt-100-lh: clamp(5rem, 12vw, 12rem);
     --fnt-hundred: clamp(13rem,28vw,30rem);
     --fnt-years: clamp(3.2rem,8vw,8rem);
-    --fnt-yellowbox: 60rem;
+
+    /* box with text */
+    --box-width: clamp(10vw,70vw,60rem);
+    --box-height: auto;
+    --fnt-insidebox: clamp(2rem, 8vw, 8rem);
     
 }
 
@@ -253,8 +257,8 @@ section {
 .box {
     /* background: goldenrod; */
     border: .5rem solid goldenrod;
-    width: var(--fnt-yellowbox);
-    height: 10rem;
+    width: var(--box-width);
+    height: var(--box-height);
     border-radius: 7rem;
     margin: auto;
     overflow: hidden;
@@ -271,6 +275,7 @@ section {
     align-items: center;
     text-align: center;
     animation: scroll 40s infinite;
+    animation-fill-mode: both;
 }
 
 @keyframes scroll {
@@ -293,7 +298,7 @@ section {
     text-transform: uppercase;
     font-weight: 700;
     font-family: var(--fnt-primary);
-    font-size: 8rem;
+    font-size: var(--fnt-insidebox);
     white-space: nowrap;
     color: var(--clr-urgent);
 
@@ -537,6 +542,20 @@ section {
     .stripes {
         padding: 0 2rem;
     }
+
+    .text-scrolling-horizontally {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* .box {
+        width: 40rem;
+        height: 7rem;
+        align-items: center;
+        justify-content: center;
+    } */
     
 }
+
 
