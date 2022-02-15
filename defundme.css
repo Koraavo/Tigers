@@ -6,6 +6,7 @@
     --fnt-primary: 'Quicksand', sans-serif;
     --clr-bg: lightgray;
     --clr-fnt:black;
+    --clr-urgent: rgb(206, 63, 11);
 
         /* final clamps for the main header */
     --fnt-mainhead-lh: clamp(2.9rem, 8vw, 8rem);
@@ -215,7 +216,7 @@ section {
 }
 
 .news-list li:hover {
-    background: rgb(206, 63, 11);
+    background: var(--clr-urgent)
 }
 
 #another-image {
@@ -250,12 +251,54 @@ section {
 }
 
 .box {
-    background: goldenrod;
+    /* background: goldenrod; */
+    border: 1rem solid goldenrod;
     width: var(--fnt-yellowbox);
-    height: 12rem;
+    height: 10rem;
     border-radius: 7rem;
     margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
 }
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: scroll 40s infinite linear;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(calc(-25rem * 7));
+    }
+    
+}
+
+.slide .bxs-circle {
+    font-size: 1.6rem;
+    color: var(--clr-urgent);
+}
+
+.box p {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: var(--fnt-primary);
+    font-size: 8rem;
+    white-space: nowrap;
+    color: var(--clr-urgent);
+
+}
+
 
 /* more-images */
 
@@ -450,7 +493,6 @@ section {
         margin: auto;
     }
 
-    .box, 
     .menu,
     .more-images {
         display: none;
