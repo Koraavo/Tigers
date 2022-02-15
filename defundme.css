@@ -34,6 +34,8 @@
 
 html {
     font-size: 62.5%;
+    /* for smooth scrolling */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -182,11 +184,6 @@ section {
     text-align: center;
 }
 
-.newslist {
-    display: inline-block;
-    text-align: left;
-}
-
 .news-list li {
     padding: 1rem 0;
     border-top: 1px solid black;
@@ -211,7 +208,8 @@ section {
     display: block;
     
 }
-.news-list li a:hover {
+.news-list li a:hover,
+.news-list li a:focus {
     right: 1rem;
 
 }
@@ -481,6 +479,16 @@ section {
         text-align: end;
     }
 
+    .title .sub-head .stripes {
+        display: block;
+    }
 
+}
+
+@media (max-width:780px) {
+    .stripes {
+        padding: 0 2rem;
+    }
+    
 }
 
