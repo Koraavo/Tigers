@@ -4,8 +4,8 @@
     --fnt-headline: 'Roboto Serif', sans-serif;
     --fnt-headline2: 'Space Grotesk', sans-serif;
     --fnt-primary: 'Quicksand', sans-serif;
-    --clr-bg: lightgray;
-    --clr-fnt:black;
+    --clr-lightgray: lightgray;
+    --clr-black:black;
     --clr-urgent: rgb(206, 63, 11);
 
         /* final clamps for the main header */
@@ -46,7 +46,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    background-color: var(--clr-bg);
+    background-color: var(--clr-lightgray);
     
 }
 
@@ -54,6 +54,10 @@ section {
     width: 80%;
     margin: 10rem auto;
     max-width: 95%;
+}
+
+main {
+    margin-bottom: 20rem;
 }
 
 .header, .home {
@@ -74,7 +78,13 @@ section {
     left: 90%;
     cursor: pointer;
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 2rem;    
+    /* display: none; */
+}
+
+.menu a {
+    color: var(--clr-black);
+    text-decoration: none;
 }
 
 .home {
@@ -116,15 +126,14 @@ section {
 
 .title .sub-head {
     font-size: 1.6rem;
-    margin: 0 auto;
     margin-top: 1rem;
-    position: relative;
-    left: 3rem;
+    text-align: center;
+
 
 }
 
 .img-tiger {
-    width: 90vw;
+    width: 70vw;
     border-radius: 1rem;
 }
 
@@ -142,7 +151,7 @@ section {
 .scroll-down-button {
     cursor: pointer;
     text-decoration: none;
-    color: var(--clr-fnt);
+    color: var(--clr-black);
 }
 
 /* about section */
@@ -204,7 +213,7 @@ section {
 
 .news-list li a {
     text-decoration: none;
-    color: var(--clr-fnt);
+    color: var(--clr-black);
     text-transform: uppercase;
     font-size: 1.3rem;
     font-weight: 700;
@@ -225,14 +234,14 @@ section {
     background: var(--clr-urgent)
 }
 
-#another-image {
+#after-news-image {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
 }
 
-.another-side-image {
-    width: 40%;
+.sleeping-tiger {
+    width: 50vw;
     border-radius: 1rem;
 }
 
@@ -316,19 +325,21 @@ section {
 /* more-images */
 
 .more-images {
+    max-width: 90vw;
     display: flex;
-    gap: 10rem;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .more-images-left,
 .more-images-right {
-    width: 50%;
+    width: 40%;
     border-radius: 1rem;
 }
 
 .more-images-left {
-    width: 40%;
-    height: 40%;
+    width: 40vw;
 }
 
 .more-images-left {
@@ -340,21 +351,23 @@ section {
 
 .footer {
     background: black;
-    color: var(--clr-bg);
+    color: var(--clr-lightgray);
     max-width: 100%;
     width: 100%;
     margin-top: 10rem;
     font-family: var(--fnt-primary);
-    padding: 2rem 5rem;
+    padding: 5rem;
     display: grid;
     justify-content: space-evenly;
     align-items: center;
     gap: 10rem;
     grid-template-areas: 
     "footImage Newsletter socialMedia"
-    "copyRight copyRight helpNow";
-    
+    "copyRight copyRight helpNow"; 
+    overflow: hidden;   
 }
+
+
 
 .footer-header {
     max-width: 75%;
@@ -368,16 +381,17 @@ section {
     object-fit: cover;
 }
 
-.foot3 i {
-    color: var(--clr-bg);
+.foot3 a {
+    color: var(--clr-lightgray);
     font-size: 3rem;
     padding: 1rem;
     margin: 1rem;
+    text-decoration: none;
 }
 
 .help a {
     text-decoration: none;
-    color: var(--clr-bg);
+    color: var(--clr-lightgray);
 }
 
 
@@ -456,7 +470,7 @@ section {
       display: block;
       transition: 0.2s;
       font-size: 1rem;
-      color: var(--clr-bg);
+      color: var(--clr-lightgray);
       font-weight:700;    
       padding-bottom: 6px;  
       font-weight: 700;
@@ -478,7 +492,7 @@ section {
       /* padding: 1rem 5rem; */
       border: none;
       background: transparent;
-      color: var(--clr-bg);
+      color: var(--clr-lightgray);
       text-transform: uppercase;
       cursor: pointer;
       border-bottom: 2px solid gray;
@@ -496,6 +510,9 @@ section {
     cursor: pointer;
   }
 
+
+
+
   /* mobile version */
 
 @media (max-width:1040px){
@@ -503,11 +520,6 @@ section {
     body{
         max-width: 95%;
         margin: auto;
-    }
-
-    .menu,
-    .more-images {
-        display: none;
     }
 
     .footer {
@@ -541,25 +553,114 @@ section {
 @media (max-width:780px) {
 
     .stripes {
-        /* padding: 0; */
         padding: 0 1rem; 
     }
-
-    .text-scrolling-horizontally {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-
-
-    .menu,
-    .more-images
-    {
-        display: none;
-    }
-
-    
 }
+
+
+/* menu1 */
+
+#menu1 {
+    background: var(--clr-black);
+    font-family: var(--fnt-headline);
+    color: white;
+    text-transform: uppercase;
+}
+
+.happening, .murder, .help {
+    font-family:var(--fnt-headline2);
+    font-weight: 600;
+}
+
+.what, .stages, .how {
+    font-size: 8rem;
+    font-weight: 400;
+}
+
+.menu1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu1-menu a,
+.menu1-socialmedia a,
+.menu1-hashtag a,
+.menu1-copyright {
+    font-size: 2rem;
+    font-family: var(--fnt-primary);
+}
+
+.menu1-hashtag a {
+    font-size: 1.6rem;
+}
+
+.menu1-hashtag a:hover,
+.menu1-socialmedia a:hover,
+.menu1-menu a:hover i {
+    color: orangered;
+}
+
+.number {
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.part1:hover .one{
+    color: orangered;
+}
+
+.part1:hover .one1 {
+    border-color: orangered;
+}
+
+
+.part2:hover .two{
+    color: orange;
+}
+
+.part2:hover .two2 {
+    border-color: orange;
+}
+
+
+.part3:hover .three{
+    color: green
+}
+
+.part3:hover .three3{
+    border-color: green
+}
+
+.menu1 .menu-container {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    text-align: center;    
+}
+
+.part1 .menu-container-link, .part2 .menu-container-link, .part3 .menu-container-link{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu1-menu,
+.menu1-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem;
+}
+
+
+
+
+
 
 
