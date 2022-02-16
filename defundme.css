@@ -7,6 +7,8 @@
     --clr-lightgray: lightgray;
     --clr-black:black;
     --clr-urgent: rgb(206, 63, 11);
+    --clr-white: white;
+
 
         /* final clamps for the main header */
     --fnt-mainhead-lh: clamp(2.9rem, 8vw, 8rem);
@@ -227,7 +229,6 @@ main {
 .news-list li a:hover,
 .news-list li a:focus {
     right: 1rem;
-
 }
 
 .news-list li:hover {
@@ -350,8 +351,8 @@ main {
 /* footer */
 
 .footer {
-    background: black;
-    color: var(--clr-lightgray);
+    background: url(./img/film-damage-grain-1.gif);
+    /* color: var(--clr-lightgray); */
     max-width: 100%;
     width: 100%;
     margin-top: 10rem;
@@ -375,6 +376,8 @@ main {
 }
 
 .footer-image {
+    background: url(./img/film-damage-grain.gif);
+    mix-blend-mode:difference;
     width: 30rem;
     height: 20rem;
     border-radius: 1rem;
@@ -561,9 +564,9 @@ main {
 /* menu1 */
 
 #menu1 {
-    background: var(--clr-black);
+    background: url(./img/film-damage-grain-1.gif);
     font-family: var(--fnt-headline);
-    color: white;
+    color: var(--clr-white);
     text-transform: uppercase;
 }
 
@@ -578,7 +581,7 @@ main {
 }
 
 .menu1 a {
-    color: white;
+    color: var(--clr-white);
     text-decoration: none;
 }
 
@@ -605,7 +608,7 @@ main {
     font-weight: 700;
     padding: 1rem;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid var(--clr-white);
 }
 
 .part1:hover .one{
@@ -661,6 +664,61 @@ main {
 
 
 
+/* What is happening  */
+#whatishappening {
+    background: url(./img/film-damage-grain-1.gif);
+    color: var(--clr-white);
+    text-transform: uppercase;
+}
 
+.wih a,
+.wih.news-list a {
+    color: var(--clr-white)
+}
+
+.wih.news-list li {
+    border-top-color: var(--clr-white);
+}
+
+.news-list li:last-child {
+    border-bottom-color: var(--clr-white);
+}
+
+.wih-tiger-img {
+    overflow-y: scroll;
+}
+
+.wih-tiger-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.whatishappening-script {
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    margin: 3rem;
+    align-items: center;
+}
+
+.left {
+    height: 70vh;
+    display: block;
+    /* background-color: green; */
+    overflow-y: scroll;
+}
+.right {
+    height: 70vh;
+    /* background-color: red; */
+    display: block;
+    overflow-y: scroll;
+}
+
+.wih.foot3 {
+    display: flex;
+}
 
 
