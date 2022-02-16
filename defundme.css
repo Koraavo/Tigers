@@ -5,29 +5,29 @@
     --fnt-headline2: 'Space Grotesk', sans-serif;
     --fnt-primary: 'Quicksand', sans-serif;
     --clr-lightgray: lightgray;
-    --clr-black:black;
+    --clr-black: black;
     --clr-urgent: rgb(206, 63, 11);
 
-        /* final clamps for the main header */
+    /* final clamps for the main header */
     --fnt-mainhead-lh: clamp(2.9rem, 8vw, 8rem);
-    --fnt-mainhead: clamp(3.5rem, 10vw, 10rem); 
-    --fnt-extinction: clamp(5rem, 14vw, 14rem); 
-    --fnt-mainhead-fline-position: clamp(-10rem,-10vw,-4rem);
-    --fnt-mainhead-sline-position: clamp(2.2rem,5.5vw,5rem);
-    --fnt-mainhead-tline-position: clamp(1rem,3vw,3rem);
+    --fnt-mainhead: clamp(3.5rem, 10vw, 10rem);
+    --fnt-extinction: clamp(5rem, 14vw, 14rem);
+    --fnt-mainhead-fline-position: clamp(-10rem, -10vw, -4rem);
+    --fnt-mainhead-sline-position: clamp(2.2rem, 5.5vw, 5rem);
+    --fnt-mainhead-tline-position: clamp(1rem, 3vw, 3rem);
 
 
     /* 100 years */
     --fnt-100-lh: clamp(5rem, 12vw, 12rem);
-    --fnt-hundred: clamp(10rem,28vw,30rem);
-    --fnt-years: clamp(2.5rem,8vw,8rem);
+    --fnt-hundred: clamp(10rem, 28vw, 30rem);
+    --fnt-years: clamp(2.5rem, 8vw, 8rem);
 
 
     /* box with text */
-    --box-width: clamp(10vw,70vw,60rem);
+    --box-width: clamp(10vw, 70vw, 60rem);
     --box-height: auto;
     --fnt-insidebox: clamp(2rem, 8vw, 8rem);
-    
+
 }
 
 *, *::before, *::after {
@@ -35,7 +35,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 
 
 html {
@@ -47,7 +46,7 @@ html {
 body {
     font-size: 1.6rem;
     background-color: var(--clr-lightgray);
-    
+
 }
 
 section {
@@ -62,7 +61,7 @@ main {
 
 .header, .home {
     font-family: var(--fnt-primary);
-    text-transform:uppercase;
+    text-transform: uppercase;
     font-weight: 700;
 }
 
@@ -78,7 +77,7 @@ main {
     left: 90%;
     cursor: pointer;
     padding: 1rem;
-    font-size: 2rem;    
+    font-size: 2rem;
     /* display: none; */
 }
 
@@ -136,7 +135,6 @@ main {
     width: 70vw;
     border-radius: 1rem;
 }
-
 
 
 .stripes {
@@ -222,8 +220,9 @@ main {
     padding: 1rem;
     transition: right .1s ease;
     display: block;
-    
+
 }
+
 .news-list li a:hover,
 .news-list li a:focus {
     right: 1rem;
@@ -297,7 +296,7 @@ main {
     100% {
         transform: translateX(calc(-25rem * 7));
     }
-    
+
 }
 
 .slide .bxs-circle {
@@ -363,10 +362,9 @@ main {
     gap: 10rem;
     grid-template-areas: 
     "footImage Newsletter socialMedia"
-    "copyRight copyRight helpNow"; 
-    overflow: hidden;   
+    "copyRight copyRight helpNow";
+    overflow: hidden;
 }
-
 
 
 .footer-header {
@@ -419,14 +417,13 @@ main {
 .help {
     grid-area: helpNow;
     text-align: end;
-    
+
 }
 
 .footer-small {
     text-transform: uppercase;
     font-size: 2rem;
 }
-
 
 
 /* form input styling */
@@ -451,10 +448,10 @@ main {
 
 .form__field::placeholder {
     color: transparent;
-  }
+}
 
 
-  .form__label {
+.form__label {
     /* position: relative;
     right: 35rem;
     top: 3rem; */
@@ -462,62 +459,60 @@ main {
     transition: 0.2s;
     font-size: 1rem;
     color: gray;
-  }
-  
-  .form__field:focus ~ .form__label{
-      position: absolute;
-      top: 0;
-      display: block;
-      transition: 0.2s;
-      font-size: 1rem;
-      color: var(--clr-lightgray);
-      font-weight:700;    
-      padding-bottom: 6px;  
-      font-weight: 700;
-      border-width: 3px;
-      border-image-slice: 1;
-    }
-    
-  /* reset input */
-  .form__field:invalid {
-      box-shadow: none;
-  }
+}
 
-  button {
-      display: flex;
-      align-items: center;
-  }
+.form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: var(--clr-lightgray);
+    font-weight: 700;
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image-slice: 1;
+}
 
-  #submit {
-      /* padding: 1rem 5rem; */
-      border: none;
-      background: transparent;
-      color: var(--clr-lightgray);
-      text-transform: uppercase;
-      cursor: pointer;
-      border-bottom: 2px solid gray;
-  }
+/* reset input */
+.form__field:invalid {
+    box-shadow: none;
+}
 
-  #submit::before {
-      content: '|';
-      font-size: 3rem;
+button {
+    display: flex;
+    align-items: center;
+}
 
-  }
+#submit {
+    /* padding: 1rem 5rem; */
+    border: none;
+    background: transparent;
+    color: var(--clr-lightgray);
+    text-transform: uppercase;
+    cursor: pointer;
+    border-bottom: 2px solid gray;
+}
 
-  .form__group i {
+#submit::before {
+    content: '|';
+    font-size: 3rem;
+
+}
+
+.form__group i {
     color: goldenrod;
     font-size: 5rem;
     cursor: pointer;
-  }
+}
 
 
+/* mobile version */
 
+@media (max-width: 1040px) {
 
-  /* mobile version */
-
-@media (max-width:1040px){
-    
-    body{
+    body {
         max-width: 95%;
         margin: auto;
     }
@@ -550,10 +545,10 @@ main {
 
 }
 
-@media (max-width:780px) {
+@media (max-width: 780px) {
 
     .stripes {
-        padding: 0 1rem; 
+        padding: 0 1rem;
     }
 }
 
@@ -568,7 +563,7 @@ main {
 }
 
 .happening, .murder, .help {
-    font-family:var(--fnt-headline2);
+    font-family: var(--fnt-headline2);
     font-weight: 600;
 }
 
@@ -608,7 +603,7 @@ main {
     border: 2px solid white;
 }
 
-.part1:hover .one{
+.part1:hover .one {
     color: orangered;
 }
 
@@ -617,7 +612,7 @@ main {
 }
 
 
-.part2:hover .two{
+.part2:hover .two {
     color: orange;
 }
 
@@ -626,11 +621,11 @@ main {
 }
 
 
-.part3:hover .three{
+.part3:hover .three {
     color: green
 }
 
-.part3:hover .three3{
+.part3:hover .three3 {
     border-color: green
 }
 
@@ -638,10 +633,10 @@ main {
     height: 100vh;
     display: grid;
     align-items: center;
-    text-align: center;    
+    text-align: center;
 }
 
-.part1 .menu-container-link, .part2 .menu-container-link, .part3 .menu-container-link{
+.part1 .menu-container-link, .part2 .menu-container-link, .part3 .menu-container-link {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -658,7 +653,14 @@ main {
     margin: 3rem;
 }
 
+.fade-in {
+    opacity: 0;
+    transition: opacity 1000ms;
+}
 
+.fade-in.on-screen {
+    opacity: 1;
+}
 
 
 
