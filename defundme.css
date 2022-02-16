@@ -653,7 +653,14 @@ button {
     margin: 3rem;
 }
 
+.fade-in {
+    opacity: 0;
+    transition: opacity 1000ms;
+}
 
+.fade-in.on-screen {
+    opacity: 1;
+}
 
 
 
