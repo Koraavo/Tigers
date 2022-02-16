@@ -1,0 +1,174 @@
+/* desktop version */
+
+:root {
+    --fnt-headline: 'Roboto Serif', sans-serif;
+    --fnt-headline2: 'Space Grotesk', sans-serif;
+    --fnt-primary: 'Quicksand', sans-serif;
+    --clr-lightgray: lightgray;
+    --clr-black:black;
+    --clr-urgent: rgb(206, 63, 11);
+    --clr-white: white;
+
+
+        /* final clamps for the main header */
+    --fnt-mainhead-lh: clamp(2.9rem, 8vw, 8rem);
+    --fnt-mainhead: clamp(3.5rem, 10vw, 10rem); 
+    --fnt-extinction: clamp(5rem, 14vw, 14rem); 
+    --fnt-mainhead-fline-position: clamp(-10rem,-10vw,-4rem);
+    --fnt-mainhead-sline-position: clamp(2.2rem,5.5vw,5rem);
+    --fnt-mainhead-tline-position: clamp(1rem,3vw,3rem);
+
+
+    /* 100 years */
+    --fnt-100-lh: clamp(5rem, 12vw, 12rem);
+    --fnt-hundred: clamp(10rem,28vw,30rem);
+    --fnt-years: clamp(2.5rem,8vw,8rem);
+
+
+    /* box with text */
+    --box-width: clamp(10vw,70vw,60rem);
+    --box-height: auto;
+    --fnt-insidebox: clamp(2rem, 8vw, 8rem);
+    
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    font-size: 62.5%;
+    /* for smooth scrolling */
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--clr-lightgray);
+    
+}
+
+
+
+/* menu1 */
+
+#menu1 {
+    background: url(./img/film-damage-grain-1.gif);
+    font-family: var(--fnt-headline);
+    color: var(--clr-white);
+    text-transform: uppercase;
+}
+
+.menu1 a {
+    color: var(--clr-white);
+    text-decoration: none;
+}
+
+.menu1-menu a,
+.menu1-socialmedia a,
+.menu1-hashtag a,
+.menu1-copyright {
+    font-size: 2rem;
+    font-family: var(--fnt-primary);
+}
+
+.menu1-copyright {
+    font-size: 1rem;
+    
+}
+
+.menu1-hashtag a {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.menu1-hashtag a:hover,
+.menu1-socialmedia a:hover,
+.menu1-menu a:hover i {
+    color: orangered;
+}
+
+.happening, .murder, .help {
+    font-family:var(--fnt-headline2);
+    font-weight: 600;
+}
+
+.what, .stages, .how {
+    font-size: 8rem;
+    font-weight: 400;
+}
+
+.number {
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 50%;
+    border: 2px solid var(--clr-white);
+}
+
+.part1:hover .one{
+    color: orangered;
+}
+
+.part1:hover .one1 {
+    border-color: orangered;
+}
+
+
+.part2:hover .two{
+    color: orange;
+}
+
+.part2:hover .two2 {
+    border-color: orange;
+}
+
+
+.part3:hover .three{
+    color: green
+}
+
+.part3:hover .three3{
+    border-color: green
+}
+
+.menu1 .menu-container {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    text-align: center;    
+}
+
+.part1 .menu-container-link, .part2 .menu-container-link, .part3 .menu-container-link{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.menu1-menu,
+.menu1-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem;
+}
+
+
+    @media (max-width:1040px){
+    
+        body{
+            max-width: 95%;
+            margin: auto;
+        }
+    }
+
+    @media (max-width:780px) {
+
+    }

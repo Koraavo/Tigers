@@ -1,0 +1,260 @@
+/* desktop version */
+
+:root {
+    --fnt-headline: 'Roboto Serif', sans-serif;
+    --fnt-headline2: 'Space Grotesk', sans-serif;
+    --fnt-primary: 'Quicksand', sans-serif;
+    --clr-lightgray: lightgray;
+    --clr-black:black;
+    --clr-urgent: rgb(206, 63, 11);
+    --clr-white: white;
+
+
+        /* final clamps for the main header */
+    --fnt-mainhead-lh: clamp(2.9rem, 8vw, 8rem);
+    --fnt-mainhead: clamp(3.5rem, 10vw, 10rem); 
+    --fnt-extinction: clamp(5rem, 14vw, 14rem); 
+    --fnt-mainhead-fline-position: clamp(-10rem,-10vw,-4rem);
+    --fnt-mainhead-sline-position: clamp(2.2rem,5.5vw,5rem);
+    --fnt-mainhead-tline-position: clamp(1rem,3vw,3rem);
+
+
+    /* 100 years */
+    --fnt-100-lh: clamp(5rem, 12vw, 12rem);
+    --fnt-hundred: clamp(10rem,28vw,30rem);
+    --fnt-years: clamp(2.5rem,8vw,8rem);
+
+
+    /* box with text */
+    --box-width: clamp(10vw,70vw,60rem);
+    --box-height: auto;
+    --fnt-insidebox: clamp(2rem, 8vw, 8rem);
+
+
+    --scrollbarBG: #CFD8DC;
+    --thumbBG: #90A4AE;
+    
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+    /* for smooth scrolling */
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--clr-lightgray);
+    
+}
+
+/* What is happening  */
+
+#whatishappening {
+    background: url(./img/film-damage-grain-1.gif);
+    font-family: var(--fnt-headline);
+    color: var(--clr-white);
+    text-transform: uppercase;
+}
+
+
+.whatishappening a {
+    color: var(--clr-white);
+    text-decoration: none;
+}
+
+.wih-header a,
+.menu1-socialmedia a,
+.menu1-hashtag a,
+.menu1-copyright {
+    font-size: 2rem;
+    font-family: var(--fnt-primary);
+}
+
+.menu1-copyright {
+    font-size: 1rem;
+    
+}
+
+.menu1-hashtag a {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.menu1-hashtag a:hover,
+.menu1-socialmedia a:hover,
+.wih-menu a:hover i {
+    color: orangered;
+}
+
+
+
+
+/* news */
+
+.news {
+    text-align: center;
+}
+
+.news-list li {
+    padding: 1rem 0;
+    border-top: 1px solid black;
+    text-align: right;
+    list-style: none;
+}
+
+.news-list li:last-child {
+    border-bottom: 1px solid black;
+}
+
+.news-list li a {
+    text-decoration: none;
+    color: var(--clr-black);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 700;
+    position: relative;
+    right: 0;
+    padding: 1rem;
+    transition: right .1s ease;
+    display: block;
+    
+}
+.news-list li a:hover,
+.news-list li a:focus {
+    right: 1rem;
+}
+
+.news-list li:hover {
+    background: var(--clr-urgent)
+}
+
+.wih.news-list a {
+    color: var(--clr-white)
+}
+
+.wih.news-list li {
+    border-top-color: var(--clr-white);
+}
+
+.news-list li:last-child {
+    border-bottom-color: var(--clr-white);
+}
+
+
+/* image of the tiger */
+
+.wih-tiger-img img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.white-line {
+    background: var(--clr-white);
+    width: .2rem;
+    margin: 0 auto;
+    display: none;
+}
+
+
+/* positioning the header */
+
+.wih-header {
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hashtag {
+    flex: 2;
+    text-align: center;
+}
+
+/* bisectional position - main content */
+
+.wih-midsection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 70vh;
+    gap: 2rem;
+    margin: 0 3rem;
+    /* position: relative; */
+    /* top: 4rem; */
+    /* border: 1px solid red; */
+
+}
+
+.wih .about-subtitle {
+    margin: auto;
+}
+
+/* for scrolling */
+
+.left {
+    display: block;
+    overflow-y: scroll;
+}
+
+.right {
+    display: block;
+    overflow-y: scroll;
+}
+
+/* positioning the footer */
+
+.wih-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem;
+}
+
+.wih .about-subtitle-subhead,
+.happening {
+    font-family:var(--fnt-headline2);
+}
+
+.happening {
+    font-weight: 600;
+}
+
+.wih-main-story {
+    color: var(--clr-urgent);
+}
+
+.wih .about-subtitle-head {
+    margin: 2rem 0;
+    font-size: 8rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 70%;
+}
+
+.wih .about-subtitle-subhead {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+
+
+
+@media (max-width:1040px){
+    
+    body{
+        max-width: 95%;
+        margin: auto;
+    }
+}
+
+@media (max-width:780px) {
+
+}
