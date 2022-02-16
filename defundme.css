@@ -319,7 +319,6 @@ main {
 .box:hover .slide,
 .box:focus .slide {
     animation-play-state: paused;
-    cursor: pointer;
 }
 
 
@@ -366,6 +365,7 @@ main {
     "footImage Newsletter socialMedia"
     "copyRight copyRight helpNow"; 
     overflow: hidden;   
+    color: var(--clr-white);
 }
 
 
@@ -458,9 +458,6 @@ main {
 
 
   .form__label {
-    /* position: relative;
-    right: 35rem;
-    top: 3rem; */
     display: block;
     transition: 0.2s;
     font-size: 1rem;
