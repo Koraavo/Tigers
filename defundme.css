@@ -44,6 +44,7 @@ html {
     font-size: 62.5%;
     /* for smooth scrolling */
     scroll-behavior: smooth;
+    scroll-padding: 10rem;
 }
 
 body {

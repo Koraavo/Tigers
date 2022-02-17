@@ -1,6 +1,3 @@
-
-/*  */
-
 /* desktop version */
 
 :root {
@@ -95,6 +92,17 @@ body a {
     font-weight: 500;
 }
 
+/* bisectional position - main content */
+
+.wih-midsection {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 70vh;
+    gap: 2rem;
+    margin: 0 3rem;
+}
+
+
 /* positioning the footer */
 
 .pages-footer {
@@ -114,136 +122,6 @@ body a {
     
 }
 
-
-
-
-
-
-/* Mid section of the page */
-
-
-/* news */
-
-.news {
-    text-align: center;
-}
-
-.news-list li {
-    padding: 1rem 0;
-    border-top: 1px solid black;
-    text-align: right;
-    list-style: none;
-}
-
-.news-list li:last-child {
-    border-bottom: 1px solid black;
-}
-
-.news-list li a {
-    text-decoration: none;
-    color: var(--clr-black);
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    font-weight: 700;
-    position: relative;
-    right: 0;
-    padding: 1rem;
-    transition: right .1s ease;
-    display: block;
-    
-}
-.news-list li a:hover,
-.news-list li a:focus {
-    right: 1rem;
-}
-
-.news-list li:hover {
-    background: var(--clr-urgent)
-}
-
-.wih.news-list a {
-    color: var(--clr-white)
-}
-
-.wih.news-list li {
-    border-top-color: var(--clr-white);
-}
-
-.news-list li:last-child {
-    border-bottom-color: var(--clr-white);
-}
-
-
-/* image of the tiger */
-
-.wih-tiger-img img {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 2rem;
-}
-
-.white-line {
-    background: var(--clr-white);
-    width: .2rem;
-    margin: 0 auto;
-    display: none;
-}
-
-
-/* bisectional position - main content */
-
-.wih-midsection {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 70vh;
-    gap: 2rem;
-    margin: 0 3rem;
-}
-
-.wih .about-subtitle {
-    margin: auto;
-}
-
-/* for scrolling */
-
-.left {
-    display: block;
-    overflow-y: scroll;
-}
-
-.right {
-    display: block;
-    overflow-y: scroll;
-}
-
-
-.wih .about-subtitle-subhead,
-.happening {
-    font-family:var(--fnt-headline2);
-}
-
-.happening {
-    font-weight: 600;
-}
-
-.wih-main-story {
-    color: var(--clr-urgent);
-}
-
-.wih .about-subtitle-head {
-    margin: 2rem 0;
-    font-size: 8rem;
-    font-weight: 400;
-    text-align: center;
-    line-height: 70%;
-}
-
-.wih .about-subtitle-subhead {
-    width: 70%;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 2rem;
-}
 
 
 @media (max-width:1040px){
