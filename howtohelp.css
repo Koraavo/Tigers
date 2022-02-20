@@ -130,10 +130,18 @@ body a {
 
 section ul li {
     list-style: none;
-    background: black;
-    padding: 2rem;
-    margin-bottom: 2rem;
+    background: darkgreen;
     text-align: center;
+    max-width: 50%;
+    /* margin: auto; */
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 1rem;
+}
+
+section ul li:hover {
+    transform: scale(1.1, 1);
+    cursor: pointer;
 }
 
 
