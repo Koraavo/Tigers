@@ -215,9 +215,8 @@
     </div>
 
 
-    <!-- <script>
+    <script>
         const sections = document.querySelectorAll('section');
-        console.log(sections);
         const midSection = document.querySelector('.midsection');
         const windowHeight = midSection.offsetHeight;
         const navigation = document.querySelector('.navigation')
@@ -228,6 +227,15 @@
             }
         }
 
+        document.querySelectorAll('li').forEach(function (item, i) {
+            console.log(i * windowHeight)
+            item.addEventListener('click', function () {
+                midSection.scrollTo({
+                    top: i * windowHeight,
+                    behavior: 'smooth',
+                })
+            })
+        })
 
         midSection.addEventListener('scroll', function () {
             const scrollTop = midSection.scrollTop;
@@ -240,19 +248,8 @@
                 }
             })
         })
-
-        document.querySelectorAll('li').forEach(function (item, i) {
-            console.log(i * windowHeight)
-            item.addEventListener('click', function () {
-                midSection.scrollTo({
-                    top: i * windowHeight,
-                    behavior: 'smooth',
-                })
-            })
-        })
-    </script> -->
-
-
+    </script>
+    
 </body>
 
 </html>
