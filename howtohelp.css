@@ -1,0 +1,151 @@
+/* desktop version */
+
+:root {
+    --fnt-headline: 'Roboto Serif', sans-serif;
+    --fnt-headline2: 'Space Grotesk', sans-serif;
+    --fnt-primary: 'Quicksand', sans-serif;
+    --clr-lightgray: lightgray;
+    --clr-black:black;
+    --clr-urgent: rgb(206, 63, 11);
+    --clr-white: white;
+
+
+        /* final clamps for the main header */
+    --fnt-mainhead-lh: clamp(2.9rem, 8vw, 8rem);
+    --fnt-mainhead: clamp(3.5rem, 10vw, 10rem); 
+    --fnt-extinction: clamp(5rem, 14vw, 14rem); 
+    --fnt-mainhead-fline-position: clamp(-10rem,-10vw,-4rem);
+    --fnt-mainhead-sline-position: clamp(2.2rem,5.5vw,5rem);
+    --fnt-mainhead-tline-position: clamp(1rem,3vw,3rem);
+
+
+    /* 100 years */
+    --fnt-100-lh: clamp(5rem, 12vw, 12rem);
+    --fnt-hundred: clamp(10rem,28vw,30rem);
+    --fnt-years: clamp(2.5rem,8vw,8rem);
+
+
+    /* box with text */
+    --box-width: clamp(10vw,70vw,60rem);
+    --box-height: auto;
+    --fnt-insidebox: clamp(2rem, 8vw, 8rem);
+
+
+    --scrollbarBG: #CFD8DC;
+    --thumbBG: #90A4AE;
+    
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+    /* for smooth scrolling */
+}
+
+body {
+    font-size: 1.6rem;
+    background: rgb(2, 26, 2);
+    font-family: var(--fnt-headline);
+    color: var(--clr-white);
+    text-transform: uppercase;
+}
+
+/* What is happening  */
+
+body a {
+    color: var(--clr-white);
+    text-decoration: none;
+    font-family: var(--fnt-primary);
+}
+
+.pages-header a:hover,
+.pages-footer a:hover {
+    color: var(--clr-urgent);
+}
+
+/* positioning the header */
+
+.pages-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.pages-header a {
+    padding: 1rem;
+}
+
+.pages-hashtag {
+    flex: 2;
+    text-align: center;
+    font-weight: 500;
+}
+
+.pages-help {
+    font-weight: 500;
+}
+
+
+/* positioning the footer */
+
+.pages-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.pages-footer a {
+    padding: 1rem;
+}
+
+
+.pages-copyright {
+    font-family: var(--fnt-primary);
+    font-size: .8rem;
+    
+}
+
+
+
+/* bisectional position - main content */
+
+.midsection {
+    height: 70vh;
+    overflow-y: scroll;
+}
+
+.section-container {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section ul li {
+    list-style: none;
+    background: black;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+
+@media (max-width:1040px){
+    
+    body{
+        max-width: 95%;
+        margin: auto;
+    }
+}
+
+@media (max-width:780px) {
+
+}
