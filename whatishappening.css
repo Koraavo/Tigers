@@ -15,6 +15,7 @@
 
         /* final clamps for the main header */
     --fnt-mainhead-lh: clamp(2.9rem, 8vw, 8rem);
+    /* --fnt-mainhead-lh: clamp(2.9rem, 8vw, 8rem); */
     --fnt-mainhead: clamp(3.5rem, 10vw, 10rem); 
     --fnt-extinction: clamp(5rem, 14vw, 14rem); 
     --fnt-mainhead-fline-position: clamp(-10rem,-10vw,-4rem);
@@ -237,10 +238,11 @@ body a {
 
 .wih .about-subtitle-head {
     margin: 2rem 0;
-    font-size: 8rem;
+    font-size: 5rem;
     font-weight: 400;
     text-align: center;
     line-height: 70%;
+
 }
 
 .wih .about-subtitle-subhead {
@@ -258,9 +260,9 @@ body a {
         margin: auto;
     }
 
-    /* .wih-midsection {
+    .wih-midsection {
         grid-template-columns: 1fr;
-    } */
+    }
 }
 
 @media (max-width:780px) {
