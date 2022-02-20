@@ -133,14 +133,14 @@ section ul li {
     background: darkgreen;
     text-align: center;
     max-width: 50%;
-    /* margin: auto; */
     padding: 2rem;
     margin: 2rem auto;
     border-radius: 1rem;
+    transition: all .1s linear;
 }
 
 section ul li:hover {
-    transform: scale(1.1, 1);
+    transform: scale(1.05, 1);
     cursor: pointer;
 }
 

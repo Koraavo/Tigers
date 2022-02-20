@@ -40,6 +40,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 
@@ -72,10 +73,10 @@ body a {
 /* positioning the header */
 
 .pages-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .pages-header a {
@@ -83,9 +84,16 @@ body a {
 }
 
 .pages-hashtag {
-    flex: 2;
     text-align: center;
     font-weight: 500;
+
+}
+
+.navigation {
+    list-style: none;
+    z-index: 999;
+    display: flex;
+    cursor: pointer;
 }
 
 .pages-help {
@@ -128,14 +136,14 @@ img {
 .midsection {
     display: grid;
     grid-template-columns: 1fr;
-    height: 70vh;
+    height: 80vh;
     gap: 2rem;
     margin: 0 3rem;
     overflow-y: scroll;
 }
 
 section {
-    height: 70vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     text-align: center;
@@ -169,23 +177,13 @@ section article {
 }
 
 
-
-
-.navigation {
-    position: fixed;
-    list-style: none;
-    z-index: 999;
-    position: absolute;
-    top: 30%;
-}
-
 .navigation li {
     width: 1rem;
     height:1rem;
     background: #ccc;
     border: .2rem solid var(--clr-urgent);
     border-radius: 50%;
-    margin-top: 2rem; 
+    margin-right: 2rem; 
     transition: all .3s;
     background: none;
 }
