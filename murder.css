@@ -116,7 +116,16 @@ body a {
 
 /* bisectional position - main content */
 
-.wih-midsection {
+img {
+    height: 90%;
+    object-fit: cover;
+    border-radius: 1rem;
+    border: 3px solid var(--clr-urgent);
+    /* display: block; */
+    /* margin-right: 20rem; */
+}
+
+.midsection {
     display: grid;
     grid-template-columns: 1fr;
     height: 70vh;
@@ -127,8 +136,39 @@ body a {
 
 section {
     height: 70vh;
-    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
 }
+
+section h1, section p {
+    color: var(--clr-urgent);
+}
+
+section h1 {
+    font-family: var(--fnt-headline);
+    font-size: 5rem;
+}
+
+section h1 span {
+    display: block;
+}
+
+section p {
+    font-family: var(--fnt-headline2);
+    max-width: 80%;
+    margin: auto;
+    color: goldenrod;
+}
+
+
+section article {
+    display: inline-block;
+    width: 50%;
+}
+
+
 
 
 .navigation {
@@ -136,26 +176,27 @@ section {
     list-style: none;
     z-index: 999;
     position: absolute;
-    top: 35%;
+    top: 30%;
 }
 
 .navigation li {
     width: 1rem;
     height:1rem;
     background: #ccc;
-    border: .2rem solid #333;
+    border: .2rem solid var(--clr-urgent);
     border-radius: 50%;
-    margin-top: 1.5rem; 
+    margin-top: 2rem; 
     transition: all .3s;
-    /* background: none; */
+    background: none;
 }
 
 
 .navigation li:hover,
 .navigation li.selected {
-    /* background: none; */
+    background: none;
     transform: scale(1.6);
 }
+
 
 
 
