@@ -66,7 +66,11 @@ body a {
 }
 
 .pages-header a:hover,
-.pages-footer a:hover {
+.pages-header a:focus,
+.pages-header a:active,
+.pages-footer a:hover,
+.pages-footer a:focus,
+.pages-footer a:active {
     color: var(--clr-urgent);
 }
 
