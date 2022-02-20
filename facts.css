@@ -214,6 +214,13 @@ section {
     /* border: 1px solid red; */
 }
 
+.tiger-facts:hover,
+.tiger-facts:focus,
+.tiger-facts:active {
+    color: var(--clr-urgent);
+
+}
+
 
 
 @media (max-width:1040px){
