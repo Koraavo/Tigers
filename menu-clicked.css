@@ -55,41 +55,83 @@ body {
 
 /* menu1 */
 
-#menu1 {
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
     background: url(./img/film-damage-grain-1.gif);
-    font-family: var(--fnt-headline);
     color: var(--clr-white);
     text-transform: uppercase;
 }
 
-.menu1 a {
+
+body a {
     color: var(--clr-white);
     text-decoration: none;
-}
-
-.menu1-menu a,
-.menu1-socialmedia a,
-.menu1-hashtag a,
-.menu1-copyright {
-    font-size: 2rem;
     font-family: var(--fnt-primary);
 }
 
-.menu1-copyright {
-    font-size: 1rem;
-    
+.pages-header a:hover,
+.pages-header a:focus,
+.pages-header a:active,
+.pages-footer a:hover,
+.pages-footer a:focus,
+.pages-footer a:active {
+    color: var(--clr-urgent);
 }
 
-.menu1-hashtag a {
-    font-size: 1.6rem;
+/* positioning the header */
+
+.pages-header {
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pages-header a {
+    padding: 1rem;
+}
+
+.pages-hashtag {
+    text-align: center;
+    font-weight: 500;
+
+}
+
+.pages-help {
     font-weight: 500;
 }
 
-.menu1-hashtag a:hover,
-.menu1-socialmedia a:hover,
-.menu1-menu a:hover i {
-    color: orangered;
+
+/* positioning the footer */
+
+.pages-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem;
 }
+
+.pages-footer a {
+    padding: 1rem;
+}
+
+
+.pages-copyright {
+    font-family: var(--fnt-primary);
+    font-size: .8rem;  
+}
+
 
 .happening, .murder, .help {
     font-family:var(--fnt-headline2);
@@ -97,41 +139,58 @@ body {
 }
 
 .what, .stages, .how {
-    font-size: 8rem;
+    font-size: var(--fnt-mainhead);
     font-weight: 400;
+    font-family: var(--fnt-headline);
 }
 
 .number {
-    font-size: 3rem;
+    font-size: var(--fnt-mainhead-tline-position);
     font-weight: 700;
     padding: 1rem;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     border: 2px solid var(--clr-white);
 }
 
-.part1:hover .one{
+.part1, .part2{
+    margin-bottom: 2rem;
+}
+
+.part1:hover .one,
+.part1:focus .one,
+.part1:active .one{
     color: orangered;
 }
 
-.part1:hover .one1 {
+.part1:hover .one1,
+.part1:focus .one1,
+.part1:active .one1 {
     border-color: orangered;
 }
 
 
-.part2:hover .two{
+.part2:hover .two,
+.part2:focus .two,
+.part2:active .two{
     color: orange;
 }
 
-.part2:hover .two2 {
+.part2:hover .two2,
+.part2:focus .two2,
+.part2:active .two2 {
     border-color: orange;
 }
 
 
-.part3:hover .three{
+.part3:hover .three,
+.part3:focus .three,
+.part3:active .three{
     color: green
 }
 
-.part3:hover .three3{
+.part3:hover .three3,
+.part3:focus .three3,
+.part3:active .three3{
     border-color: green
 }
 
@@ -152,14 +211,6 @@ body {
 }
 
 
-.menu1-menu,
-.menu1-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 3rem;
-}
-
 
     @media (max-width:1040px){
     
@@ -170,5 +221,8 @@ body {
     }
 
     @media (max-width:780px) {
+        .part1 .menu-container-link, .part2 .menu-container-link, .part3 .menu-container-link{ 
+            display: block;
+        }
 
     }

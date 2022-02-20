@@ -100,17 +100,6 @@ body a {
     font-weight: 500;
 }
 
-/* bisectional position - main content */
-
-.wih-midsection {
-    display: grid;
-    grid-template-columns: 1fr;
-    height: 70vh;
-    gap: 2rem;
-    margin: 0 3rem;
-}
-
-
 /* positioning the footer */
 
 .pages-footer {
@@ -128,6 +117,17 @@ body a {
     font-family: var(--fnt-primary);
     font-size: .8rem;
     
+}
+
+
+/* bisectional position - main content */
+
+.wih-midsection {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 70vh;
+    gap: 2rem;
+    margin: 0 3rem;
 }
 
 
