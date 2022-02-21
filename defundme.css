@@ -54,6 +54,15 @@ body {
     background-color: var(--clr-lightgray);    
 }
 
+body a {
+    text-decoration: none;
+    color: var(--clr-black)
+}
+
+body a:hover {
+    color: var(--clr-urgent);
+}
+
 .img-tiger {
     width: 70vw;
     border-radius: 1rem;
@@ -387,6 +396,7 @@ section {
 }
 
 .foot3 a {
+    text-decoration: none;
     color: var(--clr-lightgray);
     font-size: 3rem;
     padding: 1rem;
@@ -397,6 +407,15 @@ section {
 .help a {
     text-decoration: none;
     color: var(--clr-lightgray);
+}
+
+.foot3 a:hover,
+.foot3 a:focus,
+.foot3 a:active,
+.help a:hover,
+.help a:focus,
+.help a:active {
+    color: var(--clr-urgent);
 }
 
 
