@@ -721,6 +721,8 @@ section {
         display: block;
     }
 
+    
+
 }
 
 @media (max-width:780px) {
@@ -735,6 +737,10 @@ section {
 
     .menu {
         left: 80%;
+    }
+
+    .points {
+        display: none;
     }
 }
 
