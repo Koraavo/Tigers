@@ -1,6 +1,3 @@
-
-/*  */
-
 /* desktop version */
 
 :root {
@@ -15,7 +12,6 @@
 
         /* final clamps for the main header */
     --fnt-mainhead-lh: clamp(2.9rem, 8vw, 8rem);
-    /* --fnt-mainhead-lh: clamp(2.9rem, 8vw, 8rem); */
     --fnt-mainhead: clamp(3.5rem, 10vw, 10rem); 
     --fnt-extinction: clamp(5rem, 14vw, 14rem); 
     --fnt-mainhead-fline-position: clamp(-10rem,-10vw,-4rem);
@@ -40,21 +36,17 @@
     
 }
 
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 
 html {
     font-size: 62.5%;
     /* for smooth scrolling */
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
 }
 
 body {
     font-size: 1.6rem;
-    background: url(./img/film-damage-grain-1.gif);
+    background: url(../img/film-damage-grain-1.gif);
     font-family: var(--fnt-headline);
     color: var(--clr-white);
     text-transform: uppercase;
@@ -80,10 +72,10 @@ body a {
 /* positioning the header */
 
 .pages-header {
+    margin: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem;
 }
 
 .pages-header a {
@@ -91,9 +83,13 @@ body a {
 }
 
 .pages-hashtag {
-    flex: 2;
     text-align: center;
     font-weight: 500;
+    margin-left: auto;
+}
+
+.pages-menu {
+    margin-left: auto;
 }
 
 .pages-help {
@@ -115,9 +111,12 @@ body a {
 
 .pages-copyright {
     font-family: var(--fnt-primary);
-    font-size: .8rem;
-    
+    font-size: 1.2rem;
 }
+
+
+
+
 
 
 
@@ -202,6 +201,7 @@ body a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 70vh;
+    /* height: 80vh; */
     gap: 2rem;
     margin: 0 3rem;
 }
@@ -251,7 +251,6 @@ body a {
     margin: auto;
     margin-bottom: 2rem;
 }
-
 
 @media (max-width:1040px){
     
