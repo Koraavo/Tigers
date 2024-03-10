@@ -46,7 +46,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    background: url(../img/film-damage-grain-1.gif);
+    background: url(../img/film-damage-grain-1.gif), black;
     font-family: var(--fnt-headline);
     color: var(--clr-white);
     text-transform: uppercase;
