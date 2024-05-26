@@ -20,7 +20,7 @@
 
 
     /* 100 years */
-    --fnt-100-lh: clamp(5rem, 14vw, 14rem);
+    --fnt-100-lh: clamp(5rem, 12vw, 12rem);
     --fnt-hundred: clamp(10rem,28vw,30rem);
     --fnt-years: clamp(2.5rem,8vw,8rem);
 
@@ -46,6 +46,7 @@ html {
     /* for smooth scrolling */
     scroll-behavior: smooth;
     scroll-padding: 10rem;
+    
 }
 
 body {
